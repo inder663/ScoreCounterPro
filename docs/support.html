@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us – Score Counting App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root { color-scheme: light dark; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+        .page {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 24px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 32px 26px;
+            box-shadow: 0 16px 40px rgba(15,23,42,0.08);
+            border: 1px solid rgba(148,163,184,0.3);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: #111827;
+        }
+        p {
+            line-height: 1.6;
+            color: #374151;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            outline: none;
+            background: #f9fafb;
+        }
+        input:focus, textarea:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+            background: #ffffff;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #2563eb;
+            color: #ffffff;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #1d4ed8;
+        }
+        .meta {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 8px;
+        }
+        @media (max-width: 640px) {
+            .page { padding: 12px; margin: 20px auto; }
+            .card { padding: 22px 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+
+        <h1>Contact Us</h1>
+        <p>
+            We're here to help! If you have questions, feedback, bug reports, or need assistance with the 
+            <strong>Score Counting App</strong>, please reach out to us using the form below or by email. 
+            We aim to respond within 24–48 hours.
+        </p>
+
+        <h2 style="font-size: 1.3rem; margin-top: 2rem;">📩 Contact Form</h2>
+
+        <p class="meta">*All fields are required</p>
+
+        <form>
+            <label>Your Name *</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Your Email *</label>
+            <input type="email" placeholder="Enter your email address" required>
+
+            <label>Subject *</label>
+            <input type="text" placeholder="What is your message about?" required>
+
+            <label>Message *</label>
+            <textarea placeholder="Write your message here..." required></textarea>
+
+            <a class="button" href="mailto:youremail@example.com">Send Message</a>
+        </form>
+
+        <h2 style="font-size: 1.3rem; margin-top: 2.5rem;">📧 Direct Email</h2>
+
+        <p>
+            If you prefer, you can contact us directly at:
+            <br><br>
+            <strong>Email:</strong> <a href="mailto:devhookdeveloper@gmail.com">devhookdeveloper@gmail.com</a>
+        </p>
+
+        <p class="meta">
+            This form is for display only. For real inquiries, please email us directly.
+        </p>
+
+    </div>
+</div>
+
+</body>
+</html>
